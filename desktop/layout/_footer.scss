@@ -1,0 +1,144 @@
+/* --------------------------footer------------------------- */
+.footer {
+    background-color: $background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.address {
+    &__list {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-top: 9px;
+    }
+
+    &__location {
+        color: $white;
+    }
+
+    &__link {
+        color: $address;
+    }
+}
+
+.address__link,
+.address__location {
+    padding: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.address__link:hover,
+.address__link:focus,
+.address__location:hover,
+.address__location:focus {
+    color: $logo;
+
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 12px;
+    max-height: 80px;
+
+
+    &__heading {
+        margin: 0;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+
+/*-------------------------------------------footer-form----------------------*/
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $white;
+    }
+}
+
+
+.sign-form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sign-form__input {
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px $shadow);
+    border-radius: 4px;
+    color: $address;
+
+    &[placeholder] {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $address;
+    }
+}
+
+
+
+.footer-button {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px 10px 29px;
+    margin-left: 12px;
+
+
+    &__icon {
+        position: absolute;
+        box-sizing: border-box;
+        top: 13px;
+        left: 148px;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+
+        fill: currentColor;
+    }
+}

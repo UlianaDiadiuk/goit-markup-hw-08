@@ -1,0 +1,84 @@
+body,
+.link {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: $headers;
+}
+
+.list {
+    list-style-type: none;
+}
+
+
+.button {
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px $shadow;
+
+
+    color: $white;
+    background-color: $logo;
+    cursor: pointer;
+
+}
+
+
+.text {
+    color: $text-grey;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Скидати маржин */
+
+.values__heading,
+.navigation,
+.contacts {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+/*-----------Container--------------*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

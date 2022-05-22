@@ -1,0 +1,196 @@
+/* --------------------------footer------------------------- */
+.footer {
+    background-color: $background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+}
+
+
+.address {
+    &__list {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: center;
+
+        @media screen and (min-width: $desktop) {
+        text-align: start;
+        }
+    }
+
+    &__item {
+        margin-top: 8px;
+
+        @media screen and (min-width: $desktop) {
+        margin-top: 9px;
+        }
+
+    }
+
+    &__location {
+        color: $white;
+    }
+
+    &__link {
+        color: $address;
+    }
+}
+
+.address__link,
+.address__location {
+    padding: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width: $desktop) {
+.address__link:hover,
+.address__link:focus,
+.address__location:hover,
+.address__location:focus {
+    color: $logo;
+}
+}
+
+.socials {
+    margin-top: 60px;
+
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+    }
+
+    &__heading {
+        margin: 0;
+        text-align: center;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white;
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 12px;
+            text-align: start;
+        }
+    }
+}
+
+
+/*-------------------------------------------footer-form----------------------*/
+.footer-form {
+    // display: flex;
+    // flex-direction: column;
+    // margin-left: 93px;
+
+    &__heading {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+
+        color: $white;
+            
+        
+        @media screen and (min-width: $tablet) {
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+    }
+
+        @media screen and (min-width: $desktop) {
+         &__heading {
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: start;
+        }
+}
+}
+
+
+.sign-form {
+    @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+
+.sign-form__input {
+    padding: 15px 16px;
+    width: 450px;
+    height: 50px;
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px $shadow);
+    border-radius: 4px;
+    color: $address;
+
+    &[placeholder] {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $address;
+    }
+
+@media screen and (min-width: $desktop) {
+    width: 358px;
+}
+}
+
+
+
+.footer-button {
+    position: relative;
+    display: flex;
+
+    // justify-content: flex-start;
+
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 28px 10px 29px;
+
+
+
+    &__icon {
+        position: absolute;
+        box-sizing: border-box;
+        top: 13px;
+        left: 148px;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+
+        fill: currentColor;
+    }
+
+@media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-top: 0;
+    margin-right: 0;
+}
+}
