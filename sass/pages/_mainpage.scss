@@ -8,18 +8,19 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-size: 480px;
+    background-size: 480px 400px;
     background-image: linear-gradient(to bottom,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url("./bckgr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
 
 
 
     @media screen and (min-width: $tablet) {
-            background-size: 768px;
+            background-size: 768px 400px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -186,6 +187,11 @@
 
 
 /*------------------------tasks part-------------------*/
+ @media screen and (max-width: $desktop) {
+   .tasks {
+       display: none;
+   }
+ }
 
 
         @media screen and (min-width: $desktop) {
