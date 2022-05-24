@@ -628,6 +628,29 @@ img {
   }
 }
 
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+.menu-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
 .menu {
   position: absolute;
   top: 0;
@@ -638,11 +661,13 @@ img {
   height: 796px;
   padding: 48px 40px;
   background-color: #FFF;
+  z-index: 10;
 }
 
 .menu-icon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #212121;
 }
 
 .menu-button {
@@ -656,16 +681,20 @@ img {
   height: 40px;
 }
 
-.menu-button:hover .menu-icon,
-.menu-button:focus .menu-icon {
-  fill: #2196f3;
+.menu-button:hover, .menu-button:focus {
   cursor: pointer;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button:hover .menu-icon,
+.menu-button:focus .menu-icon {
+  fill: currentColor;
 }
 
 .menu-close {
@@ -1024,6 +1053,10 @@ img {
   background-color: #f5f4fa;
 }
 
+.team__container {
+  padding: 30px 122px 24px 122px;
+}
+
 @media screen and (min-width: 768px) {
   .team__container {
     padding: 24px 74px;
@@ -1089,11 +1122,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .team {
+  .team__image-container {
     width: 354px;
     height: 374px;
   }
-  .team img {
+  .team__image-container img {
     height: 374px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1101,11 +1134,11 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .team {
+  .team__image-container {
     width: 270px;
     height: 260px;
   }
-  .team img {
+  .team__image-container img {
     height: 270px;
     -o-object-fit: cover;
        object-fit: cover;
