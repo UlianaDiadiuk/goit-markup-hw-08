@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    
     <!-- Шапка сторінки-->
 <header class="header">
     <div class="header__container container">
@@ -52,6 +53,60 @@
             </svg>
         </button>
     </div>
+
+
+<!--------------------MENU_MODAL------------------->
+<div class="backdrop is-hidden" menu-modal>
+    <div class="menu">
+
+        <button class="menu-close button" type="button" menu-modal-close>
+            <svg class="menu-close__svg" width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <ul class="menu-nav list">
+            <li class="menu-nav__item"><a class="menu-nav__link link menu-nav__link--current"
+                    href="index.html">Студия</a>
+            </li>
+            <li class="menu-nav__item"><a class="menu-nav__link link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакты</a></li>
+        </ul>
+        </nav>
+
+        <ul class="menu-contacts list ">
+            <li class="tel">
+                <a class="tel-link link" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="mail">
+                <a class="mail-link link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+
+        </ul>
+        <ul class="menu-socials">
+            <a href="" class="menu-socials__link link">
+                Instagram
+            </a>
+            <span class="menu-socials__line">|</span>
+            <a href="" class="menu-socials__link link">
+                Twitter
+            </a>
+            <span class="menu-socials__line">|</span>
+            <a href="" class="menu-socials__link link">
+                Facebook
+            </a>
+            <span class="menu-socials__line">|</span>
+            <a href="" class="menu-socials__link link">
+                LinkedIn
+            </a>
+        </ul>
+
+    </div>
+</div>
+
+
 </header>
 
 
@@ -511,57 +566,8 @@
 </div>
 
 
-<!--------------------MENU_MODAL------------------->
-<div class="backdrop is-hidden" menu-modal>
-    <div class="menu">
 
-        <button class="menu-close button" type="button" menu-modal-close>
-            <svg class="menu-close__svg" width="18" height="18">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-
-            <ul class="menu-nav list">
-                <li class="menu-nav__item"><a class="menu-nav__link link menu-nav__link--current" href="index.html">Студия</a>
-                </li>
-                <li class="menu-nav__item"><a class="menu-nav__link link" href="./portfolio.html">Портфолио</a></li>
-                <li class="menu-nav__item"><a class="menu-nav__link link" href="">Контакты</a></li>
-            </ul>
-            </nav>
-            
-            <ul class="menu-contacts list ">
-                <li class="tel">
-                    <a class="tel-link link" href="tel:+380961111111">
-                     +38 096 111 11 11</a>
-                </li>                
-                <li class="mail">
-                    <a class="mail-link link" href="mailto:info@devstudio.com">
-                     info@devstudio.com</a>
-                </li>
-
-            </ul>
-            <ul class="menu-socials">
-                <a href="" class="menu-socials__link link">
-                  Instagram                    
-                </a>
-                <span class="menu-socials__line">|</span>
-                <a href="" class="menu-socials__link link">
-                  Twitter
-                </a>
-                <span class="menu-socials__line">|</span>
-                <a href="" class="menu-socials__link link">
-                  Facebook
-                </a>
-                <span class="menu-socials__line">|</span>
-                <a href="" class="menu-socials__link link">
-                  LinkedIn
-                </a>
-            </ul>
-
-    </div>
-</div>
-
-
+            <script src="./js/menu.js"></script>
             <script src="./js/modal.js"></script>
 
 </body>

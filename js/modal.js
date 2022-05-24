@@ -13,34 +13,3 @@
   }
 })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[menu-modal-open]"),
-    closeModalBtn: document.querySelector("[menu-modal-close]"),
-    modal: document.querySelector("[menu-modal]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
-
-
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[portfolio - modal-open]"),
-    closeModalBtn: document.querySelector("[portfolio - modal-close]"),
-    modal: document.querySelector("[portfolio - modal]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();

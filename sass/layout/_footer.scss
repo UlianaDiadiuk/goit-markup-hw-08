@@ -6,10 +6,19 @@
 
     @media screen and (min-width: $tablet) {
     &__container {
+        padding: 0 89px 0 76px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
+
+   @media screen and (min-width: $desktop) {
+    &__container{   padding: 0 0 0 0;        
+        justify-content: start;
+        flex-wrap: nowrap;
+
+   }
+}
 }
 }
 
@@ -72,6 +81,7 @@
 
     @media screen and (min-width: $tablet) {
         margin-top: 0;
+        margin-left: 165px;
     }
 
     &__heading {
@@ -84,24 +94,38 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $white;
+            @media screen and (min-width: $desktop) {
+                    text-align: start; }
+    }
 
         @media screen and (min-width: $desktop) {
-            margin-top: 12px;
+            margin-top: 15px;
+            margin-left: 70px;
             text-align: start;
         }
     }
-}
+
 
 
 /*-------------------------------------------footer-form----------------------*/
 .footer-form {
     // display: flex;
     // flex-direction: column;
-    // margin-left: 93px;
+    margin-top: 60px;
+            @media screen and (min-width: $desktop) {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+            @media screen and (min-width: $desktop) {
+                    margin-top: 12px;
+                    margin-right: 0;
+                }
+
 
     &__heading {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin: 0;
 
         font-weight: 700;
         font-size: 14px;
@@ -114,25 +138,29 @@
             
         
         @media screen and (min-width: $tablet) {
-            margin-top: 60px;
-            margin-bottom: 20px;
+            margin: 0;
         }
-    }
+    
 
         @media screen and (min-width: $desktop) {
-         &__heading {
             margin: 0;
             margin-bottom: 20px;
             text-align: start;
         }
+    }
 }
-}
+
+
 
 
 .sign-form {
+    margin-top: 20px;    
+    
     @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row;
+
+
 }
 }
 
